@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Alert - Reddit Keyword Monitoring & Alerts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="landing-page">
+        <!-- Navigation -->
+        <nav class="landing-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i data-lucide="bell" class="brand-icon"></i>
+                    <span class="brand-text">Red Alert</span>
+                </div>
+                <button class="btn-dashboard" onclick="switchToDashboard()">
+                    Launch Dashboard
+                </button>
+            </div>
+        </nav>
+
+        <!-- Animated Background Blobs -->
+        <div class="floating-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i data-lucide="sparkles" class="badge-icon"></i>
+                    Never Miss a Reddit Opportunity Again
+                </div>
+                <h1 class="hero-headline">
+                    Turn Reddit Into Your <span class="gradient-text">Growth Engine</span>
+                </h1>
+                <p class="hero-subtext">
+                    Get instant alerts when your keywords are mentioned on Reddit. Identify buying intent, 
+                    engage authentically, and turn conversations into customers.
+                </p>
+                <div class="hero-ctas">
+                    <button class="btn-primary" onclick="switchToDashboard()">
+                        Start Free Trial
+                    </button>
+                    <button class="btn-glass">
+                        <i data-lucide="play" class="btn-icon"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="trust-indicators">
+                    <span>No credit card required</span>
+                    <span>14-day free trial</span>
+                    <span>Cancel anytime</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Red Alert Works Section -->
+        <section class="how-it-works-section">
+            <div class="how-it-works-container">
+                <h2 class="how-it-works-title">How Red Alert Works</h2>
+                <p class="how-it-works-subtitle">
+                    Transform Reddit conversations into business opportunities with our intelligent monitoring system
+                </p>
+                
+                <div class="how-it-works-content">
+                    <div class="how-it-works-text">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Set Your Keywords</h3>
+                                <p>Add the keywords and phrases that matter to your business. Whether it's "project management software," "CRM alternatives," or industry-specific terms, Red Alert monitors them all across thousands of subreddits.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>AI-Powered Analysis</h3>
+                                <p>Our advanced AI analyzes every mention in real-time, identifying sentiment, buying intent, and engagement potential. We distinguish between casual mentions and high-value opportunities where someone is actively seeking solutions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Instant Notifications</h3>
+                                <p>Get immediate alerts when high-intent prospects mention your keywords. No more manually scrolling through Reddit - we bring the opportunities directly to you when they happen.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Engage Authentically</h3>
+                                <p>Receive AI-generated response suggestions that help you engage naturally and helpfully. Build genuine relationships while positioning your solution as the answer to their problem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🎯</div>
+                            <h4>Precise Targeting</h4>
+                            <p>Monitor specific subreddits where your ideal customers hang out. From r/entrepreneur to niche industry communities.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">⚡</div>
+                            <h4>Real-Time Speed</h4>
+                            <p>Be first to respond to opportunities. Our system alerts you within minutes of relevant mentions appearing.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🧠</div>
+                            <h4>Smart Filtering</h4>
+                            <p>AI distinguishes between casual mentions and high-intent prospects actively seeking solutions in your space.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">📈</div>
+                            <h4>Proven Results</h4>
+                            <p>Our customers report 3x higher conversion rates compared to traditional outbound marketing channels.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-cases">
+                    <h3>Perfect For:</h3>
+                    <div class="use-cases-list">
+                        <div class="use-case">
+                            <i data-lucide="building" class="use-case-icon"></i>
+                            <div>
+                                <h4>SaaS Founders</h4>
+                                <p>Find prospects discussing pain points your software solves</p>
+                            </div>
+                        </div>
+                        <div class="use-case">
+                            <i data-lucide="megaphone" class="use-case-icon"></i>
+                            <div>
+                                <h4>Marketing Teams</h4>
+                                <p>Discover organic opportunities for brand mentions and thought leadership</p>
+                            </div>
+                        </div>
+                        <div class="use-case">
+                            <i data-lucide="users" class="use-case-icon"></i>
+                            <div>
+                                <h4>Sales Professionals</h4>
+                                <p>Connect with prospects when they're actively researching solutions</p>
+                            </div>
+                        </div>
+                        <div class="use-case">
+                            <i data-lucide="lightbulb" class="use-case-icon"></i>
+                            <div>
+                                <h4>Product Managers</h4>
+                                <p>Gather feedback and insights from real user conversations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="features-container">
+                <h2 class="features-title">Why Red Alert?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>Real-Time Alerts</h3>
+                        <p>Get notified instantly when your keywords are mentioned across Reddit</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3>Intent Detection</h3>
+                        <p>AI-powered analysis identifies high-intent prospects ready to buy</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3>Smart Engagement</h3>
+                        <p>Get authentic response suggestions that don't sound like spam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="pricing-container">
+                <h2 class="pricing-title">Simple, Transparent Pricing</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Starter</h3>
+                        <div class="price">$29<span>/month</span></div>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i>5 keywords</li>
+                            <li><i data-lucide="check"></i>10 subreddits</li>
+                            <li><i data-lucide="check"></i>Real-time alerts</li>
+                            <li><i data-lucide="check"></i>Basic analytics</li>
+                        </ul>
+                        <button class="btn-pricing" onclick="switchToDashboard()">Get Started</button>
+                    </div>
+                    <div class="pricing-card pricing-card-popular">
+                        <div class="popular-badge">MOST POPULAR</div>
+                        <h3>Pro</h3>
+                        <div class="price">$79<span>/month</span></div>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i>20 keywords</li>
+                            <li><i data-lucide="check"></i>Unlimited subreddits</li>
+                            <li><i data-lucide="check"></i>AI intent detection</li>
+                            <li><i data-lucide="check"></i>Sentiment analysis</li>
+                            <li><i data-lucide="check"></i>Advanced analytics</li>
+                            <li><i data-lucide="check"></i>Priority support</li>
+                        </ul>
+                        <button class="btn-pricing btn-pricing-popular" onclick="switchToDashboard()">Get Started</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">$199<span>/month</span></div>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i>Unlimited keywords</li>
+                            <li><i data-lucide="check"></i>Unlimited subreddits</li>
+                            <li><i data-lucide="check"></i>Team collaboration</li>
+                            <li><i data-lucide="check"></i>Custom integrations</li>
+                            <li><i data-lucide="check"></i>Dedicated account manager</li>
+                        </ul>
+                        <button class="btn-pricing" onclick="switchToDashboard()">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="final-cta-container">
+                <h2>Ready to dominate Reddit?</h2>
+                <p>Join 500+ founders and marketers who are already converting Reddit conversations into customers</p>
+                <button class="btn-final-cta" onclick="switchToDashboard()">
+                    Try Red Alert Free for 14 Days
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="dashboard hidden">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-container">
+                <div class="header-left">
+                    <div class="header-brand">
+                        <i data-lucide="bell" class="brand-icon"></i>
+                        <span class="brand-text">Red Alert</span>
+                    </div>
+                    <button class="btn-home" onclick="switchToLanding()" title="Back to Home">
+                        <i data-lucide="home" class="home-icon"></i>
+                        Home
+                    </button>
+                </div>
+                <div class="header-actions">
+                    <div class="notification-container" onclick="showNotifications()">
+                        <i data-lucide="bell" class="notification-icon"></i>
+                        <div class="notification-badge">3</div>
+                    </div>
+                    <i data-lucide="settings" class="settings-icon" onclick="showSettings()"></i>
+                    <div class="user-avatar" onclick="showUserMenu()">JD</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Notification Dropdown -->
+        <div id="notifications-dropdown" class="dropdown notif-dropdown hidden">
+            <div class="notif-title">Notifications</div>
+            <ol class="notif-list">
+                <li>
+                    <span class="notif-dot"></span>
+                    <span class="notif-text">
+                        <b>CRM alternatives</b> in <span class="notif-subreddit">r/smallbusiness</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="notif-dot"></span>
+                    <span class="notif-text">
+                        High intent: <b>"project management software"</b>
+                    </span>
+                </li>
+                <li>
+                    <span class="notif-dot"></span>
+                    <span class="notif-text">
+                        Positive feedback on your reply
+                    </span>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settings-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close" onclick="closeSettings()">&times;</span>
+                <h3>Settings</h3>
+                <label>
+                    <input type="checkbox" checked>
+                    Email Notifications
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox">
+                    Push Notifications
+                </label>
+                <br>
+                <button onclick="alert('Password change coming soon!')">Change Password</button>
+            </div>
+        </div>
+
+        <!-- User Menu -->
+        <div id="user-menu" class="dropdown hidden">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Stats Overview -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-blue">
+                            <i data-lucide="hash"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Active Keywords</div>
+                            <div class="stat-change">↑ 2 from last week</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-red">
+                            <i data-lucide="bell"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">47</div>
+                            <div class="stat-label">New Alerts</div>
+                            <div class="stat-change">12% increase</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-emerald">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">23</div>
+                            <div class="stat-label">Subreddits</div>
+                            <div class="stat-change">Across all keywords</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-purple">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">68%</div>
+                            <div class="stat-label">Engagement Rate</div>
+                            <div class="stat-change">8% from last month</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab Navigation -->
+            <section class="tabs-section">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" onclick="switchTab('alerts')" data-tab="alerts">
+                        Alerts
+                        <span class="tab-badge">5</span>
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('keywords')" data-tab="keywords">
+                        Keywords
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('analytics')" data-tab="analytics">
+                        Analytics
+                    </button>
+                </div>
+
+                <!-- Alerts Tab Content -->
+                <div id="alerts-content" class="tab-content active">
+                    <div class="alerts-filters">
+                        <button class="filter-btn active" onclick="filterAlerts('all', this)">All</button>
+                        <button class="filter-btn" onclick="filterAlerts('high-intent', this)">High Intent</button>
+                        <button class="filter-btn" onclick="filterAlerts('positive', this)">Positive</button>
+                        <button class="filter-btn" onclick="filterAlerts('negative', this)">Negative</button>
+                    </div>
+                    
+                    <div class="alerts-list" id="alerts-list">
+                        <!-- Alerts will be populated by JavaScript -->
+                    </div>
+
+                    <div class="engagement-tip">
+                        <div class="tip-icon">💡</div>
+                        <div class="tip-content">
+                            <strong>Tip:</strong> Mention your experience with similar tools and ask thoughtful questions to start genuine conversations
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keywords Tab Content -->
+                <div id="keywords-content" class="tab-content">
+                    <div class="keywords-header">
+                        <button class="btn-add-keyword" onclick="toggleKeywordForm()">
+                            <i data-lucide="plus"></i>
+                            Add Keyword
+                        </button>
+                    </div>
+
+                    <div id="keyword-form" class="keyword-form hidden">
+                        <div class="form-group">
+                            <label for="keyword-phrase">Keyword Phrase</label>
+                            <input type="text" id="keyword-phrase" class="form-control" placeholder="e.g., project management software">
+                        </div>
+                        <div class="form-group">
+                            <label for="keyword-subreddits">Subreddits (comma-separated)</label>
+                            <input type="text" id="keyword-subreddits" class="form-control" placeholder="e.g., r/entrepreneur, r/productivity">
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn-add" onclick="addKeyword()">Add Keyword</button>
+                            <button class="btn-cancel" onclick="toggleKeywordForm()">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div class="keywords-list" id="keywords-list">
+                        <!-- Keywords will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Analytics Tab Content -->
+                <div id="analytics-content" class="tab-content">
+                    <div class="analytics-placeholder">
+                        <i data-lucide="bar-chart-3" class="analytics-icon"></i>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Track your keyword performance, engagement metrics, and conversion insights</p>
+                        <button class="btn-analytics" onclick="showAnalytics()">View Full Analytics</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+    // Show/hide notifications dropdown
+    function showNotifications() {
+        document.getElementById('notifications-dropdown').classList.toggle('hidden');
+        document.getElementById('settings-modal').classList.add('hidden');
+        document.getElementById('user-menu').classList.add('hidden');
+    }
+
+    // Show/hide settings modal
+    function showSettings() {
+        document.getElementById('settings-modal').classList.remove('hidden');
+        document.getElementById('notifications-dropdown').classList.add('hidden');
+        document.getElementById('user-menu').classList.add('hidden');
+    }
+    function closeSettings() {
+        document.getElementById('settings-modal').classList.add('hidden');
+    }
+
+    // Show/hide user menu
+    function showUserMenu() {
+        document.getElementById('user-menu').classList.toggle('hidden');
+        document.getElementById('notifications-dropdown').classList.add('hidden');
+        document.getElementById('settings-modal').classList.add('hidden');
+    }
+
+    // Simple logout function
+    function logout() {
+        alert('Logged out!');
+        // Add your logout logic here
+        document.getElementById('user-menu').classList.add('hidden');
+    }
+
+    // Hide dropdowns/modals when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.notification-container') &&
+            !event.target.closest('#notifications-dropdown')) {
+            document.getElementById('notifications-dropdown').classList.add('hidden');
+        }
+        if (!event.target.closest('.settings-icon') &&
+            !event.target.closest('#settings-modal')) {
+            document.getElementById('settings-modal').classList.add('hidden');
+        }
+        if (!event.target.closest('.user-avatar') &&
+            !event.target.closest('#user-menu')) {
+            document.getElementById('user-menu').classList.add('hidden');
+        }
+    });
+    </script>
+</body>
+</html>
